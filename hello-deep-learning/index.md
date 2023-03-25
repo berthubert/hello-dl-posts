@@ -23,7 +23,7 @@ Meanwhile the pure maths approach ("see it is easy, it is just a Jacobian matrix
 
 The goal of this tutorial is to develop modern neural networks entirely from scratch, but where we still end up with really impressive results.
 
-[Code is here](https://github.com/berthubert/hello-dl). 
+[Code is here](https://github.com/berthubert/hello-dl). Markdown for blogposts can [also be found on GitHub](https://github.com/berthubert/hello-dl-posts) so you can turn typos into pull requests (thanks!).
 
 Chapters:
 
@@ -37,4 +37,5 @@ Chapters:
  * [Chapter 7: Dropout, data augmentation and weight decay, quantisation](https://berthub.eu/tmp/hello-dl/dropout-data-augmentation-weight-decay)
  * [Chapter 8: An actual 1300 line from scratch handwritten letter OCR program](https://berthub.eu/tmp/hello-dl/dl-ocr-demo) (WIP)
  * [Chapter 9: Gated Recurring Unit / LSTM: Some language processing, DNA scanning](https://berthub.eu/tmp/hello-dl/dl-gru-lstm-dna) (WIP)
- * [Chapter 10: What does it all mean?](https://berthub.eu/tmp/hello-dl/dl-what-does-it-all-mean) (WIP)
+ * [Chapter 10: Attention, transformers, how does this compare to ChatGPT?](https://berthub.eu/tmp/hello-dl/dl-attention-transformers-chatgpt) (nothing yet)
+ * [Chapter 11: What does it all mean?](https://berthub.eu/tmp/hello-dl/dl-what-does-it-all-mean) (WIP)
