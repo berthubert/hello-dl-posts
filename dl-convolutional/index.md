@@ -3,7 +3,7 @@ title: "Hello Deep Learning: Convolutional networks"
 date: 2023-03-08T00:01:02+01:00
 draft: true
 ---
-**DRAFT!! Still finding the right form for this series**
+> This page is part of the [Hello Deep Learning](../hello-deep-learning) series of blog posts.
 
 In the [previous chapter](../autograd) we taught a network of linear combinations and 'rectified linear units' to recognize handwritten digits reasonably successfully. But we already noted that the network would be sensitive to the exact location of pixels, and that it does not in any meaningful way "know" what a 7 looks like.
 

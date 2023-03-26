@@ -3,6 +3,8 @@ title: "Hello Deep Learning: Dropout, data augmentation, weight decay and quanti
 date: 2023-03-25T09:58:02+01:00
 draft: true
 ---
+> This page is part of the [Hello Deep Learning](../hello-deep-learning) series of blog posts.
+
 In the previous chapter we found ways to speed up our character recognition learning by a factor of 20 by using a better optimizer, and a further factor of four by cleverly using threads using a 'shared nothing architecture'. We also learned how we can observe the development of parameters.
 
 So our convolutional network is now super fast, and performs well on training and validation sets. But is is robust? Or has it internalized too much of the training set details?

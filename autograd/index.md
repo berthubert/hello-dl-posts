@@ -3,7 +3,7 @@ title: "Hello Deep Learning: Automatic differentiation, autograd"
 date: 2023-01-28T11:58:02+01:00
 draft: true
 ---
-**DRAFT!! Still finding the right form for this series**
+> This page is part of the [Hello Deep Learning](../hello-deep-learning) series of blog posts.
 
 In the previous chapter we configured a neural network and made it learn to distinguish between the digits 3 and 7. The learning turned out to consist of "twisting the knobs in the right direction". Although simplistic, the results were pretty impressive. But, you might still be a bit underwhelmed - the network only distinguished between two digits.
 
@@ -360,6 +360,6 @@ The calls to `.transpose()` meanwhile reflect that our Tensor class is actually 
 
 Rounding it off - automatic differentiation is absolute key to neural networks. That we can assemble networks of many many layers each consisting of huge matrices using a straightforward syntax makes it possible to innovate rapidly. We are lucky enough that modern languages make it possible to both assemble these networks easily, AND perform automatic differentiation.
 
-In the next chapter we'll be making our multi-layer network do some actual work in learning to recognize 10 different digits. There we'll also be introducing key concepts in machine learning like loss function, batches and the enigmatic 'softlogmax' layer.
+[In the next chapter](../handwritten-digits-sgd-batches/) we'll be making our multi-layer network do some actual work in learning to recognize 10 different digits. There we'll also be introducing key concepts in machine learning like loss function, batches and the enigmatic 'softlogmax' layer.
 
 

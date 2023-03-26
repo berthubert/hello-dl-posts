@@ -3,6 +3,7 @@ title: "Deep Learning: What does it all mean?"
 date: 2023-03-11T20:43:44+01:00
 draft: true
 ---
+> This page is part of the [Hello Deep Learning](../hello-deep-learning) series of blog posts.
 XXX draft not done XXX
 
 In writing this series, I've first hand experienced the 'wow factor' of having your new neural network do impressive things. As part of my alarming lack of focus, I am also a very amateur biologist. I study DNA and evolution, as exhibited for example in [my Nature Scientific Data paper](https://www.nature.com/articles/s41597-022-01179-8).

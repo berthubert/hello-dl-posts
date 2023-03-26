@@ -3,7 +3,7 @@ title: "Hello Deep Learning: Reading handwritten digits"
 date: 2023-01-31T00:01:02+01:00
 draft: true
 ---
-**DRAFT!! Still finding the right form for this series**
+> This page is part of the [Hello Deep Learning](../hello-deep-learning) series of blog posts.
 
 In the [previous chapter](../autograd) we described how automatic differentiation of the result of neural networks works. 
 
@@ -570,6 +570,6 @@ This is about as far as linear combinations can go. And although 90+% correctnes
 
 However, we can still feel pretty good - this tiny network did really well on its simple job, and we know *exactly* how it was trained and what it does.
 
-Next up we'll be adding elements that actually capture shapes and their relations, which leads to greater generic performance, but also more complexity and training time.
+[In the next chapter](../dl-convolutional/), we'll be adding elements that actually capture shapes and their relations, which leads to greater generic performance, but also more complexity and training time. [We'll also be going over some common neural network disappointments](../dl-convolutional/).
 
-Stay tuned!
+

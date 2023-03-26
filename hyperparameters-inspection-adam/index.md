@@ -1,9 +1,9 @@
 ---
 title: "Hello Deep Learning: Hyperparameters, inspection, parallelism, ADAM"
-date: 2023-02-05T09:58:02+01:00
+date: 2023-03-26T09:58:02+01:00
 draft: true
 ---
-** XXX DRAFT ETC **
+> This page is part of the [Hello Deep Learning](../hello-deep-learning) series of blog posts.
 
 In [the previous chapter](../dl-convolutional) we successfully trained a network to recognize handwritten letters, but it took an awfully long time. This is not just inconvenient: networks that take too long to train mean we can experiment less. Some things really are out of reach if each iteration takes 24 hours, instead of 15 minutes. In addition we waste a lot of energy this way.
 

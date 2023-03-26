@@ -3,7 +3,7 @@ title: "Hello Deep Learning: Linear combinations"
 date: 2023-01-25T21:58:02+01:00
 draft: true
 ---
-**DRAFT!! Still finding the right form for this series**
+> This page is part of the [Hello Deep Learning](../hello-deep-learning) series of blog posts.
 
 In this chapter we're going to build our first neural network and take it for a spin. Weirdly, this demonstration will likely simultaneously make you wonder "is this all??" and also impress you by what even this trivial stuff can do.
 
@@ -252,4 +252,4 @@ Note that on the first line we use the calculated result middle to set the *bias
 
 And that's it! If you look at the full [threeorseven.cc](https://github.com/berthubert/hello-dl/blob/main/threeorseven.cc) you'll find that it contains some additional code to log data for the histogram we showed above, and for generating some sample images.
 
-Stay tuned for the next chapter where we'll start doing some actual learning.
+In [the next chapter](../first-learning), we'll start doing some actual learning. 

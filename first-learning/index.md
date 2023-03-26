@@ -3,7 +3,7 @@ title: "Hello Deep Learning: actually learning something"
 date: 2023-01-25T21:58:02+01:00
 draft: true
 ---
-**DRAFT!! Still finding the right form for this series**
+> This page is part of the [Hello Deep Learning](../hello-deep-learning) series of blog posts.
 
 In this chapter we're going to take [the neural network we made earlier](../hello-deep-learning), but actually make it do some learning itself. And, oddly enough, this demonstration will again likely simultaneously make you wonder "is this all??" and also impress you by what even this trivial stuff can do.
 
@@ -190,5 +190,5 @@ Rounding off this chapter, using a surprisingly [small amount of code](https://g
 
 Still, as earlier, it is somewhat disconcerting how effective these techniques are even when what we are doing appears to be trivial.
 
-Stay tuned for the next chapter, in which we're going to learn all about automatic differentiation.
+In the next chapter, [we're going to learn all about automatic differentiation](../autograd).
 
