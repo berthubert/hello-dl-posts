@@ -1,9 +1,9 @@
 ---
 title: "Hello Deep Learning: Linear combinations"
-date: 2023-03-29T12:00:00+02:00
+date: 2023-03-29T12:00:01+02:00
 draft: true
 ---
-> This page is part of the [Hello Deep Learning](../hello-deep-learning) series of blog posts.
+> This page is part of the [Hello Deep Learning](../hello-deep-learning) series of blog posts. You are very welcome to improve this page [via GitHub](https://github.com/berthubert/hello-dl-posts/blob/main/hello-deep-learning-chapter1/index.md)!
 
 In this chapter we're going to build our first neural network and take it for a spin. Weirdly, this demonstration will likely simultaneously make you wonder "is this all??" and also impress you by what even this trivial stuff can do.
 

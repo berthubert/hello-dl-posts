@@ -1,9 +1,9 @@
 ---
 title: "Hello Deep Learning: Further reading & worthwhile projects"
-date: 2023-03-29T12:00:00+02:00
+date: 2023-03-29T12:00:09+02:00
 draft: true
 ---
-> This page is part of the [Hello Deep Learning](../hello-deep-learning) series of blog posts.
+> This page is part of the [Hello Deep Learning](../hello-deep-learning) series of blog posts. You are very welcome to improve this page [via GitHub](https://github.com/berthubert/hello-dl-posts/blob/main/dl-and-now-what/index.md)!
 
 After having completed this series of blogposts (well done!) you should have a good grounding in what deep learning is actually doing. However, this was of course only a small 20k word introduction, so there is a lot left to learn.
 

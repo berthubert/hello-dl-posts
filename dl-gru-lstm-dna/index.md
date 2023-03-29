@@ -1,6 +1,6 @@
 ---
 title: "Gated Recurring Unit / LSTM: Some language processing, DNA scanning"
-date: 2023-03-29T12:00:00+02:00
+date: 2023-03-29T13:00:00+02:00
 draft: true
 ---
 > This page is part of the [Hello Deep Learning](../hello-deep-learning) series of blog posts.

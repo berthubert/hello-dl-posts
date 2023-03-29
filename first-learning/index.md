@@ -1,9 +1,9 @@
 ---
 title: "Hello Deep Learning: actually learning something"
-date: 2023-03-29T12:00:00+02:00
+date: 2023-03-29T12:00:02+02:00
 draft: true
 ---
-> This page is part of the [Hello Deep Learning](../hello-deep-learning) series of blog posts.
+> This page is part of the [Hello Deep Learning](../hello-deep-learning) series of blog posts. You are very welcome to improve this page [via GitHub](https://github.com/berthubert/hello-dl-posts/blob/main/first-learning/index.md)!
 
 In this chapter we're going to take [the neural network we made earlier](../hello-deep-learning), but actually make it do some learning itself. And, oddly enough, this demonstration will again likely simultaneously make you wonder "is this all??" and also impress you by what even this trivial stuff can do.
 

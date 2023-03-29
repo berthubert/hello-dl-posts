@@ -1,9 +1,9 @@
 ---
-title: "Deep Learning: Doing some actual OCR on handwritten characters"
-date: 2023-03-29T12:00:00+02:00
+title: "Hello Deep Learning: Doing some actual OCR on handwritten characters"
+date: 2023-03-29T12:00:08+02:00
 draft: true
 ---
-> This page is part of the [Hello Deep Learning](../hello-deep-learning) series of blog posts.
+> This page is part of the [Hello Deep Learning](../hello-deep-learning) series of blog posts. You are very welcome to improve this page [via GitHub](https://github.com/berthubert/hello-dl-posts/blob/main/dl-ocr-demo/index.md)!
 
 The [previous](../dropout-data-augmentation-weight-decay/) chapters have often mentioned the chasm between "deep learning models that work on my data" and "it actually works in the real world". It is perhaps for this reason that almost all demos and YouTube tutorials you find online never do any real world testing.
 
@@ -207,4 +207,7 @@ The end result however is quite pleasing, especially since we spent only 300 lin
     
 And, it should be noted that the total line count of 1500 for training and 300 for inference is impressively low.
 
+<!--
 In [the next chapter](../dl-gru-lstm-dna/) we'll be moving away from convolutions and enter the excuting world of language processing.
+-->
+In [the next chapter](../dl-and-now-what/) you'll find further reading & pointers where to continue your deep learning journey.

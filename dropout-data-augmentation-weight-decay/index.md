@@ -1,9 +1,9 @@
 ---
 title: "Hello Deep Learning: Dropout, data augmentation, weight decay and quantisation"
-date: 2023-03-29T12:00:00+02:00
+date: 2023-03-29T12:00:07+02:00
 draft: true
 ---
-> This page is part of the [Hello Deep Learning](../hello-deep-learning) series of blog posts.
+> This page is part of the [Hello Deep Learning](../hello-deep-learning) series of blog posts. You are very welcome to improve this page [via GitHub](https://github.com/berthubert/hello-dl-posts/blob/main/dropout-data-augmentation-weight-decay/index.md)!
 
 In the previous chapter we found ways to speed up our character recognition learning by a factor of 20 by using a better optimizer, and a further factor of four by cleverly using threads using a 'shared nothing architecture'. We also learned how we can observe the development of parameters.
 

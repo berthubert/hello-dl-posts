@@ -1,6 +1,6 @@
 ---
 title: "Hello Deep Learning"
-date: 2023-03-29T12:00:00+02:00
+date: 2023-03-29T11:59:00+02:00
 draft: true
 ---
 <center>
