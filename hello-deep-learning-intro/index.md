@@ -1,7 +1,7 @@
 ---
 title: "Hello Deep Learning: Intro"
 date: 2023-03-29T12:00:00+02:00
-draft: true
+draft: false
 ---
 > This page is part of the [Hello Deep Learning](../hello-deep-learning) series of blog posts. Also, feel free to skip this intro and [head straight for chapter 1](../hello-deep-learning-chapter1) where the machine learning begins! 
 

@@ -1,7 +1,7 @@
 ---
 title: "Hello Deep Learning: Linear combinations"
 date: 2023-03-29T12:00:01+02:00
-draft: true
+draft: false
 ---
 > This page is part of the [Hello Deep Learning](../hello-deep-learning) series of blog posts. You are very welcome to improve this page [via GitHub](https://github.com/berthubert/hello-dl-posts/blob/main/hello-deep-learning-chapter1/index.md)!
 

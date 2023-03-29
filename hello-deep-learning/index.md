@@ -1,7 +1,7 @@
 ---
 title: "Hello Deep Learning"
 date: 2023-03-29T11:59:00+02:00
-draft: true
+draft: false
 ---
 <center>
 <video width="100%" autoplay loop muted playsinline>
@@ -24,21 +24,22 @@ The goal of this tutorial is to develop modern neural networks entirely from scr
 
 Chapters:
 
- * [Introduction](https://berthub.eu/tmp/hello-dl/hello-deep-learning-intro) (which you can skip if you want)
- * [Chapter 1: Linear combinations](https://berthub.eu/tmp/hello-dl/hello-deep-learning-chapter1)
- * [Chapter 2: Some actual learning, backward propagation](https://berthub.eu/tmp/hello-dl/first-learning)
- * [Chapter 3: Automatic differentiation](https://berthub.eu/tmp/hello-dl/autograd)
- * [Chapter 4: Recognizing handwritten digits using a multi-layer network: batch learning SGD](https://berthub.eu/tmp/hello-dl/handwritten-digits-sgd-batches)
- * [Chapter 5: Neural disappointments, convolutional networks, recognizing handwritten **letters**](https://berthub.eu/tmp/hello-dl/dl-convolutional/)
- * [Chapter 6: Inspecting and plotting what is going on, hyperparameters, momentum, ADAM](https://berthub.eu/tmp/hello-dl/hyperparameters-inspection-adam)
- * [Chapter 7: Dropout, data augmentation and weight decay, quantisation](https://berthub.eu/tmp/hello-dl/dropout-data-augmentation-weight-decay)
- * [Chapter 8: An actual 1700 line from scratch handwritten letter OCR program](https://berthub.eu/tmp/hello-dl/dl-ocr-demo) 
+ * [Introduction](../hello-deep-learning-intro) (which you can skip if you want)
+ * [Chapter 1: Linear combinations](../hello-deep-learning-chapter1)
+ * [Chapter 2: Some actual learning, backward propagation](../first-learning)
+ * [Chapter 3: Automatic differentiation](../autograd)
+ * [Chapter 4: Recognizing handwritten digits using a multi-layer network: batch learning SGD](../handwritten-digits-sgd-batches)
+ * [Chapter 5: Neural disappointments, convolutional networks, recognizing handwritten **letters**](../dl-convolutional/)
+ * [Chapter 6: Inspecting and plotting what is going on, hyperparameters, momentum, ADAM](../hyperparameters-inspection-adam)
+ * [Chapter 7: Dropout, data augmentation and weight decay, quantisation](../dropout-data-augmentation-weight-decay)
+ * [Chapter 8: An actual 1700 line from scratch handwritten letter OCR program](../dl-ocr-demo) 
  * Chapter 9: Gated Recurring Unit / LSTM: Some language processing, DNA scanning
  * Chapter 10: Attention, transformers, how does this compare to ChatGPT?
- * [Chapter 11: Further reading & worthwhile projects](https://berthub.eu/tmp/hello-dl/dl-and-now-what) (WIP)
- * [Chapter 12: What does it all mean?](https://berthub.eu/tmp/hello-dl/dl-what-does-it-all-mean) (WIP)
+ * [Chapter 11: Further reading & worthwhile projects](../dl-and-now-what)
+ * Chapter 12: What does it all mean?
 
 
 <!--  
- * [Chapter 9: Gated Recurring Unit / LSTM: Some language processing, DNA scanning](https://berthub.eu/tmp/hello-dl/dl-gru-lstm-dna) (WIP)
- * [Chapter 10: Attention, transformers, how does this compare to ChatGPT?](https://berthub.eu/tmp/hello-dl/dl-attention-transformers-chatgpt) (nothing yet) -->
+ * [Chapter 9: Gated Recurring Unit / LSTM: Some language processing, DNA scanning](../dl-gru-lstm-dna) (WIP)
+ * [Chapter 10: Attention, transformers, how does this compare to ChatGPT?](../dl-attention-transformers-chatgpt) (nothing yet) -->
+ * [Chapter 12: What does it all mean?](../dl-what-does-it-all-mean) (WIP)

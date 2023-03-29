@@ -1,7 +1,7 @@
 ---
 title: "Hello Deep Learning: Convolutional networks"
 date: 2023-03-29T12:00:05+02:00
-draft: true
+draft: false
 ---
 > This page is part of the [Hello Deep Learning](../hello-deep-learning) series of blog posts. You are very welcome to improve this page [via GitHub](https://github.com/berthubert/hello-dl-posts/blob/main/dl-convolutional/index.md)!
 

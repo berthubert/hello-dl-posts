@@ -1,7 +1,7 @@
 ---
 title: "Hello Deep Learning: Dropout, data augmentation, weight decay and quantisation"
 date: 2023-03-29T12:00:07+02:00
-draft: true
+draft: false
 ---
 > This page is part of the [Hello Deep Learning](../hello-deep-learning) series of blog posts. You are very welcome to improve this page [via GitHub](https://github.com/berthubert/hello-dl-posts/blob/main/dropout-data-augmentation-weight-decay/index.md)!
 
