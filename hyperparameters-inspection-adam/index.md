@@ -1,6 +1,6 @@
 ---
 title: "Hello Deep Learning: Hyperparameters, inspection, parallelism, ADAM"
-date: 2023-03-26T09:58:02+01:00
+date: 2023-03-29T12:00:00+02:00
 draft: true
 ---
 > This page is part of the [Hello Deep Learning](../hello-deep-learning) series of blog posts.
