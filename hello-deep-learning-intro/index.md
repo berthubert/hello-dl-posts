@@ -21,7 +21,7 @@ In the chapters of this 'Hello Deep Learning' project, we'll build several solut
 
 Along the way we'll cover many of the latest deep learning techniques, and employ them in our little programs.
 
-In this project, the 'from scratch' part means that we'll only be depending on system libraries, [a logging library](https://berthub.eu/articles/posts/big-data-storage/), [a matrix library](https://en.wikipedia.org/wiki/Eigen_(C%2B%2B_library)) and [an image processing library](https://github.com/nothings/stb). It serves no educational purpose to develop any of these things as part of this series. Yet, we will spend time on what the matrix library is doing for us, and we you should not ever roll your own.
+In this project, the 'from scratch' part means that we'll only be depending on system libraries, [a logging library](https://berthub.eu/articles/posts/big-data-storage/), [a matrix library](https://en.wikipedia.org/wiki/Eigen_(C%2B%2B_library)) and [an image processing library](https://github.com/nothings/stb). It serves no educational purpose to develop any of these things as part of this series. Yet, we will spend time on what the matrix library is doing for us, and why you should not ever roll your own.
 
 I hope you'll enjoy this trip through the fascinating world of deep learning. It has been my personal way of making up for years of ignorance, and with some luck, this project will not only have been useful for me.
 
