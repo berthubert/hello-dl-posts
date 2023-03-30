@@ -65,7 +65,7 @@ And even if we make life more complex, the rules remain simple:
 
 This is the '[chain rule](https://en.wikipedia.org/wiki/Chain_rule)', which effectively says the derivative of a compound function is the derivative of that function multiplied by the derivative of the input function. 
 
-I don't want too flood you with too much math, but automatic differentiation is at the absolute core of neural networks, so it pays to understand what is going on.
+I don't want to flood you with too much math, but [automatic differentiation](https://en.wikipedia.org/wiki/Automatic_differentiation) is at the absolute core of neural networks, so it pays to understand what is going on.
 
 # "Autograd"
 Every neural network system (PyTorch, TensorFlow, [Flashlight](https://github.com/flashlight/flashlight)) implements an autogradient system that performs automatic differentiation. Such systems can be implemented easily in any programming language that supports operator overloading and reference counted objects. And in fact, the implementation is so easy that you sometimes barely see it. A great example of this is [Andrej Karpathy](https://twitter.com/karpathy)'s [micrograd](https://github.com/karpathy/micrograd) autogradient implementation, [which is a tiny work of art](https://github.com/karpathy/micrograd/blob/master/micrograd/engine.py).
@@ -93,7 +93,7 @@ cout << "dy/dz = " << z.getGrad() << endl; // 2
 
 This prints out the expected outputs, which is nice. The first line perhaps appears to only print out the value of `y`, but as is customary in these systems, the calculation only happens once you try to get the value. In other words, this is lazy evaluation. This can sometimes confuse you when you setup a huge calculation that appears to happen in 'no time'. And this is because the actual calculation hasn't happened yet.
 
-The last line of the initial snippet of code (`Tensor y =`...) actually created a little computer program that will create the right output once run. This little computer program takes the shape of a directed acyclic graph:
+The last line of the initial snippet of code (`Tensor y =`...) actually created a little computer program that will create the right output once run. This little computer program takes the shape of a [directed acyclic graph](https://en.wikipedia.org/wiki/Directed_acyclic_graph):
 
 <center> 
 
