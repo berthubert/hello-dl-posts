@@ -1,13 +1,19 @@
 ---
 title: "Hello Deep Learning"
-date: 2023-03-29T11:59:00+02:00
+date: 2023-03-30T11:59:00+02:00
 draft: false
+images: [boxed.png]
 ---
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@bert_hu_bert">
+<meta name="twitter:creator" content="@bert_hu_bert">
+<meta name="twitter:title" content="Hello Deep Learning">
+<meta name="twitter:description" content="A from-scratch introduction to deep learning, including a handwritten letter recognition program">
+<meta name="twitter:image" content="https://berthub.eu/articles/boxed.png">
 <center>
 <video width="100%" autoplay loop muted playsinline>
     <source src="learning.mp4"
             type="video/mp4">
-    Sorry, your browser doesn't support embedded videos.
 </video>
 </center>
 
@@ -20,7 +26,7 @@ Meanwhile the pure maths approach ("see it is easy, it is just a Jacobian matrix
 
 The goal of this tutorial is to develop modern neural networks entirely from scratch, but where we still end up with really impressive results.
 
-[Code is here](https://github.com/berthubert/hello-dl). Markdown for blogposts can [also be found on GitHub](https://github.com/berthubert/hello-dl-posts) so you can turn typos into pull requests (thanks!).
+[Code is here](https://github.com/berthubert/hello-dl). Markdown for blogposts can [also be found on GitHub](https://github.com/berthubert/hello-dl-posts) so you can turn typos into pull requests (thanks, the first updates have arrived!).
 
 Chapters:
 
@@ -41,5 +47,6 @@ Chapters:
 
 <!--  
  * [Chapter 9: Gated Recurring Unit / LSTM: Some language processing, DNA scanning](../dl-gru-lstm-dna) (WIP)
- * [Chapter 10: Attention, transformers, how does this compare to ChatGPT?](../dl-attention-transformers-chatgpt) (nothing yet) -->
+ * [Chapter 10: Attention, transformers, how does this compare to ChatGPT?](../dl-attention-transformers-chatgpt) (nothing yet) 
  * [Chapter 12: What does it all mean?](../dl-what-does-it-all-mean) (WIP)
+ -->

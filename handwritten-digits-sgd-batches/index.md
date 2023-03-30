@@ -1,6 +1,6 @@
 ---
 title: "Hello Deep Learning: Reading handwritten digits"
-date: 2023-03-29T12:00:04+02:00
+date: 2023-03-30T12:00:04+02:00
 draft: false
 ---
 > This page is part of the [Hello Deep Learning](../hello-deep-learning) series of blog posts. You are very welcome to improve this page [via GitHub](https://github.com/berthubert/hello-dl-posts/blob/main/handwritten-digits-sgd-batches/index.md)!

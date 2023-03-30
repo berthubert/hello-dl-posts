@@ -1,6 +1,6 @@
 ---
 title: "Hello Deep Learning: Convolutional networks"
-date: 2023-03-29T12:00:05+02:00
+date: 2023-03-30T12:00:05+02:00
 draft: false
 ---
 > This page is part of the [Hello Deep Learning](../hello-deep-learning) series of blog posts. You are very welcome to improve this page [via GitHub](https://github.com/berthubert/hello-dl-posts/blob/main/dl-convolutional/index.md)!
@@ -75,7 +75,7 @@ Note that the output differs in dimensions from the input. If the input had R ro
 
 Typically, many kernels are used, leading to a single input layer creating many output layers. Every kernel is associated with a single output layer. Conceptually this can be seen as a convolutional layer scanning for many different kinds of features, all at the same time.
 
-XXX https://medium.com/mlearning-ai/simple-explanation-for-calculating-the-number-of-parameters-in-convolutional-neural-network-33ce0fffb80c
+<!-- XXX https://medium.com/mlearning-ai/simple-explanation-for-calculating-the-number-of-parameters-in-convolutional-neural-network-33ce0fffb80c -->
 
 A convolutional network can also accept multiple input layers at the same time. In this case, every output kernel slides over every input channel, and the output is the sum of the sums of that kernel sliding over all input channels. This means the number of operations is proportional to the product of the number of output layers and the number of input layers. Quite soon we are talking billions of operations. The number of filter parameters scales with product of the number of input and output layers, and of course the kernel size.
 
