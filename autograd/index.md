@@ -19,7 +19,7 @@ Our previous network consisted of one layer, a linear combination of input pixel
 3. Replace all negative elements of the resulting matrix by 0
 4. Multiply the resulting matrix by a 64x128 matrix 
 5. Replace all negative elements of the resulting matrix by 0
-6. Multiply the resulting matrix by a 10x64 matrix (
+6. Multiply the resulting matrix by a 10x64 matrix
 7. Pick the highest row of the resulting 10x1 matrix, this is the digit the network thinks it saw
 
 This model involves three matrices of parameters, with in total 128\*784 + 64\*182 + 10\*64 = 109184 *weights*. There are also 128+64+10 = 202 *bias* parameters.
