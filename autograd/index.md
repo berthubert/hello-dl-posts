@@ -133,7 +133,7 @@ For a slightly more complicated example:
 </center>
 
 Here we see that the gradients 'drop down' the tree and add up to the correct values. 
-{{<katex inline>}}dy/dx =2{{</katex>}}, because {{<katex inline>}}z+a=2{{</katex>}}. Meanwhile, both
+{{<katex inline>}}dy/dx =1{{</katex>}}, because {{<katex inline>}}z+a=1{{</katex>}}. Meanwhile, both
 {{<katex inline>}}dy/da{{</katex>}} and {{<katex inline>}}dy/dz{{</katex>}} are 2, because {{<katex inline>}}x=2{{</katex>}}.
 
 Now for our full calculation:
