@@ -12,7 +12,7 @@ To whelm it up a somewhat, in this chapter we'll introduce a 5 layer network tha
 The first part of this chapter covers the theory, and shows no code. The second part explains the code that makes it all happen. You can skip or skim the second part if you want to focus on the ideas.
 
 ## The basics
-Our previous network consisted of one layer, a linear combination of input pixels. Here a **preview** of the layers that achieve 98% accuracy recognizing handwritten digits:
+Our previous network consisted of one layer, a linear combination of input pixels. Here is a **preview** of the layers that achieve 98% accuracy recognizing handwritten digits:
 
 1. Flatten 28x28 image to a 784x1 matrix
 2. Multiply this matrix by a 128x784 matrix 
@@ -22,7 +22,7 @@ Our previous network consisted of one layer, a linear combination of input pixel
 6. Multiply the resulting matrix by a 10x64 matrix
 7. Pick the highest row of the resulting 10x1 matrix, this is the digit the network thinks it saw
 
-This model involves three matrices of parameters, with in total 128\*784 + 64\*182 + 10\*64 = 109184 *weights*. There are also 128+64+10 = 202 *bias* parameters.
+This model involves three matrices of parameters, with in total 128\*784 + 64\*128 + 10\*64 = 109184 *weights*. There are also 128+64+10 = 202 *bias* parameters.
 
 We'll dive into this network in detail later, but for now, ponder how we'd train this thing. If the output of this model is not right, by how much should we adjust each parameter? For the one-layer model from the previous chapter this was trivial - the connection between input image intensity and a weight was clear. But here?
 
@@ -43,7 +43,7 @@ This is what is called 'hill climbing', and it looks like this:
 
 </center>
 
-This is a one-dimensional example, and it is very successful: it quickly found the minimum of the function. Such hill climbing has a tendency of getting stuck in local optima, but in neural networks this apparently is far less of a problem. This may be because we aren't optimizing over 1 axis, we are actually optimizing over 109386 parameters (in the digit reading network described above). It probably takes quite a lot of work to create a 109386-dimensional local minimum.
+This is a one-dimensional example, and it is very successful: it quickly found the minimum of the function. Such hill climbing has a tendency of getting stuck in local optima, but in neural networks this apparently is far less of a problem. This may be because we aren't optimizing over 1 axis, we are actually optimizing over 109184 parameters (in the digit reading network described above). It probably takes quite a lot of work to create a 109184-dimensional local minimum.
 
 So, to learn this way, we need to perform all the calculations in the neural network, look at the outcome, and see if it needs to go up or down. Then we need to find the derivative of the outcome versus all parameters. And then we move all parameters by 0.1 of that derivative (the 'learning rate'). 
 
@@ -133,7 +133,7 @@ For a slightly more complicated example:
 </center>
 
 Here we see that the gradients 'drop down' the tree and add up to the correct values. 
-{{<katex inline>}}dy/dx =2{{</katex>}}, because {{<katex inline>}}z+a=2{{</katex>}}. Meanwhile, both
+{{<katex inline>}}dy/dx =1{{</katex>}}, because {{<katex inline>}}z+a=1{{</katex>}}. Meanwhile, both
 {{<katex inline>}}dy/da{{</katex>}} and {{<katex inline>}}dy/dz{{</katex>}} are 2, because {{<katex inline>}}x=2{{</katex>}}.
 
 Now for our full calculation:
@@ -246,7 +246,7 @@ inline Tensor<T> operator+(const Tensor<T>& lhs, const Tensor<T>& rhs)
   return ret;
 }
 ```
-With this, you can do `Tensor z = x + w`, and `z` will end up containing a `TensorImp` containing reference counted references to `z` and `w`.
+With this, you can do `Tensor z = x + w`, and `z` will end up containing a `TensorImp` containing reference counted references to `x` and `w`.
 
 Which looks like this:
 

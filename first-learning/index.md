@@ -37,7 +37,7 @@ table, th, td {
 This network achieved impressive accuracy on the very clean and polished EMNIST testing data, but partially this is because we carefully configured the network by hand. It did no learning of itself.
 
 ## How about some actual learning
-Key to calculating the verdict if something is a 3 or a 7 is the *weights* matrix. We manually initialized that matrix in the previous chapter. In machine learning, it is customary to randomly initialize the parameters. [But to what](https://towardsdatascience.com/weight-initialization-in-neural-networks-a-journey-from-the-basics-to-kaiming-954fb9b47c79)? In practice, libraries tend to pick values uniformly distributed between 
+The key to calculating the verdict if something is a 3 or a 7 is the *weights* matrix. We manually initialized that matrix in the previous chapter. In machine learning, it is customary to randomly initialize the parameters. [But to what](https://towardsdatascience.com/weight-initialization-in-neural-networks-a-journey-from-the-basics-to-kaiming-954fb9b47c79)? In practice, libraries tend to pick values uniformly distributed between 
 {{< katex inline >}}-1/\sqrt{N} {{</katex>}} and {{< katex inline >}}1/\sqrt{N}{{</katex>}}, where {{< katex inline >}}N{{</katex>}} is the number of coefficients in the input matrix. 
 
 Such a randomly chosen matrix will of course not yet be of any use:
