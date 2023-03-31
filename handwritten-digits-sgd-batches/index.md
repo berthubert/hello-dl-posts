@@ -12,11 +12,11 @@ In the first and second chapters we designed and trained a one-layer neural netw
 The next challenge is to recognize and classify all ten digits. To do so, we'll use a network that does the following:
 
 1. Flatten 28x28 image to a 784x1 matrix
-2. Multiply this matrix by a 128x784 matrix ('fc1')
+2. Multiply this matrix by a 128x784 matrix ('lc1')
 3. Replace all negative elements of the resulting matrix by 0
-4. Multiply the resulting matrix by a 64x128 matrix ('fc2')
+4. Multiply the resulting matrix by a 64x128 matrix ('lc2')
 5. Replace all negative elements of the resulting matrix by 0
-6. Multiply the resulting matrix by a 10x64 matrix ('fc3')
+6. Multiply the resulting matrix by a 10x64 matrix ('lc3')
 7. Pick the highest row of the resulting 10x1 matrix, this is the digit the network thinks it saw
 
 Or, in code form:
