@@ -246,7 +246,7 @@ inline Tensor<T> operator+(const Tensor<T>& lhs, const Tensor<T>& rhs)
   return ret;
 }
 ```
-With this, you can do `Tensor z = x + w`, and `z` will end up containing a `TensorImp` containing reference counted references to `z` and `w`.
+With this, you can do `Tensor z = x + w`, and `z` will end up containing a `TensorImp` containing reference counted references to `x` and `w`.
 
 Which looks like this:
 
