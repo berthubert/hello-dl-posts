@@ -12,7 +12,7 @@ To whelm it up a somewhat, in this chapter we'll introduce a 5 layer network tha
 The first part of this chapter covers the theory, and shows no code. The second part explains the code that makes it all happen. You can skip or skim the second part if you want to focus on the ideas.
 
 ## The basics
-Our previous network consisted of one layer, a linear combination of input pixels. Here a **preview** of the layers that achieve 98% accuracy recognizing handwritten digits:
+Our previous network consisted of one layer, a linear combination of input pixels. Here is a **preview** of the layers that achieve 98% accuracy recognizing handwritten digits:
 
 1. Flatten 28x28 image to a 784x1 matrix
 2. Multiply this matrix by a 128x784 matrix 
