@@ -43,7 +43,7 @@ This is what is called 'hill climbing', and it looks like this:
 
 </center>
 
-This is a one-dimensional example, and it is very successful: it quickly found the minimum of the function. Such hill climbing has a tendency of getting stuck in local optima, but in neural networks this apparently is far less of a problem. This may be because we aren't optimizing over 1 axis, we are actually optimizing over 109386 parameters (in the digit reading network described above). It probably takes quite a lot of work to create a 109386-dimensional local minimum.
+This is a one-dimensional example, and it is very successful: it quickly found the minimum of the function. Such hill climbing has a tendency of getting stuck in local optima, but in neural networks this apparently is far less of a problem. This may be because we aren't optimizing over 1 axis, we are actually optimizing over 109184 parameters (in the digit reading network described above). It probably takes quite a lot of work to create a 109184-dimensional local minimum.
 
 So, to learn this way, we need to perform all the calculations in the neural network, look at the outcome, and see if it needs to go up or down. Then we need to find the derivative of the outcome versus all parameters. And then we move all parameters by 0.1 of that derivative (the 'learning rate'). 
 
