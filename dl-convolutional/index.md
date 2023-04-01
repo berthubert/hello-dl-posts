@@ -32,7 +32,7 @@ To prove this point, here is a graph showing the validation success of our previ
 
 Here the input was shifted around by 2 pixels, and 5 random pixels were flicked. No human would be phazed in the least by these changes, but our network performance does drop to around 50%, which is pretty disappointing.
 
-Clearly we need better things than just multiplying whole images and matrices. These things out turn out to be 'convolutional' operations, 'max-pooling' and 'gelu'.
+Clearly we need better things than just multiplying whole images and matrices. These things turn out to be 'convolutional' operations, 'max-pooling' and 'gelu'.
 
 # Convolutional networks
 Also known as [CNN, or ConvNet](https://en.wikipedia.org/wiki/Convolutional_neural_network), these may have been the first neural networks that saw bona fide production use. This video by [Yann LeCun](https://en.wikipedia.org/wiki/Yann_LeCun) on [YouTube from 1989](https://www.youtube.com/watch?v=FwFduRA_L6Q) is absolutely worth your while ([associated paper](http://yann.lecun.com/exdb/publis/pdf/lecun-89e.pdf)), especially since we're going to build a network here that is a lot like the one demonstrated there. 
