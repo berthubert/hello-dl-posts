@@ -26,14 +26,14 @@ This model involves three matrices of parameters, with in total 128\*784 + 64\*1
 
 We'll dive into this network in detail later, but for now, ponder how we'd train this thing. If the output of this model is not right, by how much should we adjust each parameter? For the one-layer model from the previous chapter this was trivial - the connection between input image intensity and a weight was clear. But here?
 
-## Turning the knobs, or, hill climbing
+## Turning the knobs, or, gradient descent
 In our previous model, we took the formula:
 
 {{<katex display>}}R=p_1w_1 + p_2w_2 + \cdots + p_{783}w_{783} + p_{784}w_{784}{{</katex>}}
 
-And we then performed 'learning' by increasing the {{<katex inline>}}w_n{{</katex>}} parameters by 0.1 of their associated {{<katex inline>}}p_n{{</katex>}}. Effectively, we took the *derivative* of {{<katex inline>}}w_n{{</katex>}}, multiplied it by 0.1, and added it to {{<katex inline>}}w_n{{</katex>}}.
+And we then performed 'learning' by increasing the {{<katex inline>}}w_n{{</katex>}} parameters by 0.1 of their associated {{<katex inline>}}p_n{{</katex>}}. Effectively, we took the *derivative* of the error ({{<katex inline>}}\pm R{{</katex>}}) with respect to {{<katex inline>}}w_n{{</katex>}}, multiplied it by 0.1, and added it to {{<katex inline>}}w_n{{</katex>}}.
 
-This is what is called 'hill climbing', and it looks like this:
+This is what is called 'gradient descent', and it looks like this:
 
 <center>
 
