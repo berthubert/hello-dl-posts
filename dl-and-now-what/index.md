@@ -1,6 +1,6 @@
 ---
 title: "Hello Deep Learning: Further reading & worthwhile projects"
-date: 2023-03-29T12:00:09+02:00
+date: 2023-03-30T12:00:09+02:00
 draft: false
 ---
 > This page is part of the [Hello Deep Learning](../hello-deep-learning) series of blog posts. You are very welcome to improve this page [via GitHub](https://github.com/berthubert/hello-dl-posts/blob/main/dl-and-now-what/index.md)!

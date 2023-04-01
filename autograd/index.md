@@ -1,6 +1,6 @@
 ---
 title: "Hello Deep Learning: Automatic differentiation, autograd"
-date: 2023-03-29T12:00:03+02:00
+date: 2023-03-30T12:00:03+02:00
 draft: false
 ---
 > This page is part of the [Hello Deep Learning](../hello-deep-learning) series of blog posts. You are very welcome to improve this page [via GitHub](https://github.com/berthubert/hello-dl-posts/blob/main/autograd/index.md)!
@@ -12,17 +12,17 @@ To whelm it up a somewhat, in this chapter we'll introduce a 5 layer network tha
 The first part of this chapter covers the theory, and shows no code. The second part explains the code that makes it all happen. You can skip or skim the second part if you want to focus on the ideas.
 
 ## The basics
-Our previous network consisted of one layer, a linear combination of input pixels. Here a **preview** of the layers that achieve 98% accuracy recognizing handwritten digits:
+Our previous network consisted of one layer, a linear combination of input pixels. Here is a **preview** of the layers that achieve 98% accuracy recognizing handwritten digits:
 
 1. Flatten 28x28 image to a 784x1 matrix
 2. Multiply this matrix by a 128x784 matrix 
 3. Replace all negative elements of the resulting matrix by 0
 4. Multiply the resulting matrix by a 64x128 matrix 
 5. Replace all negative elements of the resulting matrix by 0
-6. Multiply the resulting matrix by a 10x64 matrix (
+6. Multiply the resulting matrix by a 10x64 matrix
 7. Pick the highest row of the resulting 10x1 matrix, this is the digit the network thinks it saw
 
-This model involves three matrices of parameters, with in total 128\*784 + 64\*182 + 10\*64 = 109184 *weights*. There are also 128+64+10 = 202 *bias* parameters.
+This model involves three matrices of parameters, with in total 128\*784 + 64\*128 + 10\*64 = 109184 *weights*. There are also 128+64+10 = 202 *bias* parameters.
 
 We'll dive into this network in detail later, but for now, ponder how we'd train this thing. If the output of this model is not right, by how much should we adjust each parameter? For the one-layer model from the previous chapter this was trivial - the connection between input image intensity and a weight was clear. But here?
 
@@ -43,7 +43,7 @@ This is what is called 'hill climbing', and it looks like this:
 
 </center>
 
-This is a one-dimensional example, and it is very successful: it quickly found the minimum of the function. Such hill climbing has a tendency of getting stuck in local optima, but in neural networks this apparently is far less of a problem. This may be because we aren't optimizing over 1 axis, we are actually optimizing over 109386 parameters (in the digit reading network described above). It probably takes quite a lot of work to create a 109386-dimensional local minimum.
+This is a one-dimensional example, and it is very successful: it quickly found the minimum of the function. Such hill climbing has a tendency of getting stuck in local optima, but in neural networks this apparently is far less of a problem. This may be because we aren't optimizing over 1 axis, we are actually optimizing over 109184 parameters (in the digit reading network described above). It probably takes quite a lot of work to create a 109184-dimensional local minimum.
 
 So, to learn this way, we need to perform all the calculations in the neural network, look at the outcome, and see if it needs to go up or down. Then we need to find the derivative of the outcome versus all parameters. And then we move all parameters by 0.1 of that derivative (the 'learning rate'). 
 
@@ -65,7 +65,7 @@ And even if we make life more complex, the rules remain simple:
 
 This is the '[chain rule](https://en.wikipedia.org/wiki/Chain_rule)', which effectively says the derivative of a compound function is the derivative of that function multiplied by the derivative of the input function. 
 
-I don't want too flood you with too much math, but automatic differentiation is at the absolute core of neural networks, so it pays to understand what is going on.
+I don't want to flood you with too much math, but [automatic differentiation](https://en.wikipedia.org/wiki/Automatic_differentiation) is at the absolute core of neural networks, so it pays to understand what is going on.
 
 # "Autograd"
 Every neural network system (PyTorch, TensorFlow, [Flashlight](https://github.com/flashlight/flashlight)) implements an autogradient system that performs automatic differentiation. Such systems can be implemented easily in any programming language that supports operator overloading and reference counted objects. And in fact, the implementation is so easy that you sometimes barely see it. A great example of this is [Andrej Karpathy](https://twitter.com/karpathy)'s [micrograd](https://github.com/karpathy/micrograd) autogradient implementation, [which is a tiny work of art](https://github.com/karpathy/micrograd/blob/master/micrograd/engine.py).
@@ -93,7 +93,7 @@ cout << "dy/dz = " << z.getGrad() << endl; // 2
 
 This prints out the expected outputs, which is nice. The first line perhaps appears to only print out the value of `y`, but as is customary in these systems, the calculation only happens once you try to get the value. In other words, this is [lazy evaluation](https://en.wikipedia.org/wiki/Lazy_evaluation). This can sometimes confuse you when you setup a huge calculation that appears to happen in 'no time'. And this is because the actual calculation hasn't happened yet.
 
-The last line of the initial snippet of code (`Tensor y =`...) actually created a little computer program that will create the right output once run. This little computer program takes the shape of a directed acyclic graph:
+The last line of the initial snippet of code (`Tensor y =`...) actually created a little computer program that will create the right output once run. This little computer program takes the shape of a [directed acyclic graph](https://en.wikipedia.org/wiki/Directed_acyclic_graph):
 
 <center> 
 
@@ -133,7 +133,7 @@ For a slightly more complicated example:
 </center>
 
 Here we see that the gradients 'drop down' the tree and add up to the correct values. 
-{{<katex inline>}}dy/dx =2{{</katex>}}, because {{<katex inline>}}z+a=2{{</katex>}}. Meanwhile, both
+{{<katex inline>}}dy/dx =1{{</katex>}}, because {{<katex inline>}}z+a=1{{</katex>}}. Meanwhile, both
 {{<katex inline>}}dy/da{{</katex>}} and {{<katex inline>}}dy/dz{{</katex>}} are 2, because {{<katex inline>}}x=2{{</katex>}}.
 
 Now for our full calculation:
@@ -246,7 +246,7 @@ inline Tensor<T> operator+(const Tensor<T>& lhs, const Tensor<T>& rhs)
   return ret;
 }
 ```
-With this, you can do `Tensor z = x + w`, and `z` will end up containing a `TensorImp` containing reference counted references to `z` and `w`.
+With this, you can do `Tensor z = x + w`, and `z` will end up containing a `TensorImp` containing reference counted references to `x` and `w`.
 
 Which looks like this:
 
