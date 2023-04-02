@@ -78,7 +78,7 @@ Tensor z(0.0f);
 Tensor y = Tensor(3.0f)*x*x*x + Tensor(4.0f)*x + Tensor(1.0f) + x*z;
 ```
 
-This configures y to be {{<katex inline>}}3x^3 + 4x + 1 +xz{{</katex>}}. The notation is somewhat clunky - it is possible to make a library that automatically converts naked numbers into `Tensor`s, but such a library might also surprise you one day when it does so when you don't expect it.
+This configures `y` to be {{<katex inline>}}3x^3 + 4x + 1 +xz{{</katex>}}. The notation is somewhat clunky - it is possible to make a library that automatically converts naked numbers into `Tensor`s, but such a library might also surprise you one day when it does so when you don't expect it.
 
 Next up, let's do something:
 
@@ -91,7 +91,7 @@ cout << "dy/dx = " << x.getGrad() << endl; // 9*x^2 + 4 = 40
 cout << "dy/dz = " << z.getGrad() << endl; // 2
 ```
 
-This prints out the expected outputs, which is nice. The first line perhaps appears to only print out the value of `y`, but as is customary in these systems, the calculation only happens once you try to get the value. In other words, this is lazy evaluation. This can sometimes confuse you when you setup a huge calculation that appears to happen in 'no time'. And this is because the actual calculation hasn't happened yet.
+This prints out the expected outputs, which is nice. The first line perhaps appears to only print out the value of `y`, but as is customary in these systems, the calculation only happens once you try to get the value. In other words, this is [lazy evaluation](https://en.wikipedia.org/wiki/Lazy_evaluation). This can sometimes confuse you when you setup a huge calculation that appears to happen in 'no time'. And this is because the actual calculation hasn't happened yet.
 
 The last line of the initial snippet of code (`Tensor y =`...) actually created a little computer program that will create the right output once run. This little computer program takes the shape of a [directed acyclic graph](https://en.wikipedia.org/wiki/Directed_acyclic_graph):
 
