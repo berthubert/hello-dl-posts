@@ -331,7 +331,8 @@ Once we have this topographic ordering, the distributing of the gradients downwa
     }
 ```
 
-The first line is important, the gradient always starts with 1. Note the `rbegin()` and `rend()` which means we traverse the topography in reverse order.
+The first line is important: the gradient of the top node is 1 (by definition, {{<katex inline>}}dy/dy=1{{</katex>}}). Every other node starts at 0, and is set through the automatic differentiation.
+Note the `rbegin()` and `rend()` which means we traverse the topography in reverse order.
 
 The abbreviated `doGrad()` meanwhile looks like this:
 
