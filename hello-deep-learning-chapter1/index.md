@@ -105,7 +105,7 @@ Middle: -5.00393
 
 That is pretty astounding. Using -5.00 as a decision rule we get 97.025% accuracy. This is approaching human level performance. Later we'll find out many reasons why we should not quite start celebrating yet though. But for now, this is quite impressive.
 
-In the above we have set the 'weights' to the difference between average threes and sevens. We've also found a bias that we need to apply. In formula form:
+In the above we have set the 'weights'(w) to the difference between average threes and sevens. We've also found a bias(b) that we need to apply. In formula form:
 
 {{< katex display >}} R =\sum{\mathit{image}\circ{}w} + b {{</katex>}}
 
