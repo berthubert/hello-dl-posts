@@ -353,7 +353,7 @@ void doGrad()
   ...
 ```
 
-If a node it just a number (`Tmode::Parameter`) it has no gradient to distribute further. It a node represents an addition, the gradient gets passed on verbatim to both the left hand and right hand sides of the + operator.
+If a node is just a number (`Tmode::Parameter`) it has no gradient to distribute further. If a node represents an addition, the gradient gets passed on verbatim to both the left hand and right hand sides of the + operator.
 
 For the multiplication case, we see that the left hand side indeed gets a gradient delivered that is proportional to the right hand side, and vice-versa. The delivered gradient is also proportional to the gradient that has already been passed down to this node.
 
