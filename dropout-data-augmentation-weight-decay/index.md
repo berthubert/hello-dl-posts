@@ -120,7 +120,7 @@ else
 
 Here `weightfact` is how heavy to weigh down on the squared weights. 0.02 appears to work well for our model.
 
-On a closing note, the number of parameters impacts how much memory and CPU/GPU a model requires to function. Currently, networks use gigantic amounts of electrical powers, which is not sustainable. If we can use this technique to slim down networks, that would be very good.
+On a closing note, the number of parameters impacts how much memory and CPU/GPU a model requires to function. Currently, networks use gigantic amounts of electrical power, which is not sustainable. If we can use this technique to slim down networks, that would be very good.
 
 In addition, we might be able to understand better what is going on if we have fewer parameters to look at.
 
