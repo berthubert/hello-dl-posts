@@ -147,7 +147,7 @@ There is a lot that can be done to networks to improve their efficiency and perf
 
 Similarly, by performing internal dropout, the network is forced to learn how to recognize the input while not being able to rely on artifacts.
 
-By adding a fraction the squared value of parameters to the loss function, we can perform weight decay, which drives parameters to zero if they are not contributing to the result. This again aids in robustness, since stray unused neurons have less chance of interfering. Furthermore, we might drop very small value neurons from our network entirely, and still have a working network.
+By adding a fraction of the squared value of parameters to the loss function, we can perform weight decay, which drives parameters to zero if they are not contributing to the result. This again aids in robustness, since stray unused neurons have less chance of interfering. Furthermore, we might drop very small value neurons from our network entirely, and still have a working network.
 
 Finally, quantisation is the art of storing the weights in fewer bits which, kinda surprisingly, can be done without impacting performance too much.
 
