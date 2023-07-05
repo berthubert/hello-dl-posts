@@ -93,7 +93,7 @@ In addition, by benefiting from four-fold parallelization (since I have 4 cores)
 
 By achieving good performance after 15 wall clock minutes, we've increased our learning speed by over a factor of 80.
 
-These things are not just nice, they are complete game changers. Networks that otherwise take days to reach decent performance can do so in hours with the right optimizer. Also, the optimizer can actually be achieve better results by not getting stuck in local minima. This brings us to a rather dark subject in deep learning.
+These things are not just nice, they are complete game changers. Networks that otherwise take days to reach decent performance can do so in hours with the right optimizer. Also, the optimizer can actually achieve better results by not getting stuck in local minima. This brings us to a rather dark subject in deep learning.
 
 # Hyperparameters
 So far we've seen a number of parameters that had to be set: the learning rate, for which we suggested a value of 0.2. If we want to use momentum (the rolling ball method), we have to pick a *momentum* parameter. If we use ADAM, we need to pick \\(\alpha\\), \\(\beta_1\\) and \\(\beta_2\\) (although the default values are pretty good).
