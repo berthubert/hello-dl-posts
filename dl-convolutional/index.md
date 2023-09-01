@@ -68,7 +68,7 @@ Here three sample positions A, B and C in the output layer:
 ```
 A =  1*1 +  2*2 +  3*3 +  9*4 + 10*5 + 11*6 + 17*7 + 18*8 + 19*9  
 B = 10*1 + 11*2 + 12*3 + 18*4 + 19*5 + 20*6 + 26*7 + 27*8 + 28*9  
-C = 22*2 + 23*2 + 24*3 + 30*4 + 31*5 + 32*6 + 38*7 + 39*8 + 40*9  
+C = 22*1 + 23*2 + 24*3 + 30*4 + 31*5 + 32*6 + 38*7 + 39*8 + 40*9  
 ```
 
 Note that the output differs in dimensions from the input. If the input had R rows and a K by K kernel is used, the output will have 1+R-K rows, and similar for columns (1+C-K). The output dimensions will always be smaller. The values in the output represent the presence of features matched by the filter kernels.
