@@ -19,5 +19,5 @@ Sites:
 
 Projects:
  * [Whisper.cpp](https://github.com/ggerganov/whisper.cpp), by hero worker [Georgi Gerganov](https://ggerganov.com/). An open source self-contained C++ version of OpenAI's whisper speech recognition model. You can run this locally on very modest hardware and it is incredibly impressive. Because the source code is so small it is a great learning opportunity.
- * [Llama.cpp](https://github.com/ggerganov/llama.cpp), again by Georgi, a C++ version of Meta's Llama "small" large language model that can run on reasonable hardware. Uses quantisation to fit in normal amounts of memory. If prompted well, the Llama model shows ChaptGPT-like capabilities.
+ * [Llama.cpp](https://github.com/ggerganov/llama.cpp), again by Georgi, a C++ version of Meta's Llama "small" large language model that can run on reasonable hardware. Uses quantisation to fit in normal amounts of memory. If prompted well, the Llama model shows ChatGPT-like capabilities.
  
